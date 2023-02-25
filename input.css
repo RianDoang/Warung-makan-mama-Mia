@@ -283,21 +283,22 @@ nav ul li a:hover {
   color: whitesmoke;
   letter-spacing: 1px;
   background: transparent;
-  border: 2px solid #c4c4c4;
+  border: 2px solid #51e5a1;
   transition: 0.2s ease;
 }
 
 .colm-2 a:hover {
-  background: #c4c4c4;
+  background: #51e5a1;
   color: #080808;
-  border: transparent;
 }
 
 .container {
   width: 100%;
   height: 100vh;
+  background-color: red;
 }
-.container .wadah-2 {
+
+.wadah-2 {
   width: 100%;
   min-height: 10vh;
   text-align: center;
@@ -321,7 +322,7 @@ nav ul li a:hover {
   background-color: #080808;
   display: flex;
   height: 2px;
-  width: 30%;
+  width: 20%;
   margin: -15px auto 30px auto;
 }
 
@@ -337,46 +338,47 @@ nav ul li a:hover {
   opacity: 1;
 }
 
-.isi-2 .btn {
+.isi-2 .btn-about {
   margin-top: 55px;
   margin-bottom: 40px;
 }
 
-.isi-2 a {
+.btn-about a {
   opacity: 0;
   text-decoration: none;
   color: whitesmoke;
-  padding: 20px;
+  padding: 20px 25px;
   background-color: #080808;
   border-radius: 10px;
   transition: 0.5s ease;
 }
 
-.isi-2 a.fade-in {
+.btn-about a.fade-in {
   opacity: 1;
 }
 
-.isi-2 a:hover {
+.btn-about a:hover {
   transition: 0.3s ease;
-  background: #0808085d;
+  background: #51e5a1;
+  color: #080808;
   border: 1px solid #080808;
 }
 
 .wadah-3 {
   width: 100%;
-  height: 100vh;
-  /* background-color: #0e7490; */
-  background-image: url(img/Makaroni\ img.jpg);
+  max-height: 5000px;
+  background-color: #24272c;
+  color: whitesmoke;
+  /* background-image: url(img/Makaroni\ img.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   display: flex;
   align-items: center;
 }
 
 .wadah-3 .isi-3 {
-  width: 88%;
-  height: 90%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -387,11 +389,11 @@ nav ul li a:hover {
 }
 
 .content-3 span {
-  background-color: #080808;
+  background-color: #51e5a1;
   display: flex;
   height: 2px;
   width: 9%;
-  margin: 0 auto 40px auto;
+  margin: 5px auto 40px auto;
 }
 
 .list-1 {
@@ -402,22 +404,20 @@ nav ul li a:hover {
 .list-1 .menu-1 {
   width: 100%;
   height: 100%;
-  margin: 60px auto;
+  margin: 50px auto 150px auto;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.side-menu-1 {
-  box-sizing: border-box;
-}
-
-.side-menu-1 .bakar-img,
-.goreng-img,
-.kuah-img {
-  margin-top: 15px;
-  margin-bottom: 25px;
-  padding: 25px;
+.menu-1 .side-menu-1 {
+  /* border: 2px solid gray; */
+  padding: 10px;
+  margin: 0 auto;
+  width: 25%;
+  display: flex;
+  justify-content: center;
 }
 
 .side-menu-1 .bakar {
@@ -433,7 +433,7 @@ nav ul li a:hover {
 .bakar h1 {
   margin-top: 5px;
   font-size: 60px;
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 
 .bakar h2 {
@@ -442,15 +442,9 @@ nav ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .bakar .bakar-img {
-  background-image: url(img/fire-burner-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 .bakar .deskripsi-1 {
   font-size: 15px;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
 }
 
 .side-menu-1 .goreng {
@@ -465,7 +459,7 @@ nav ul li a:hover {
 .goreng h1 {
   margin-top: 5px;
   font-size: 60px;
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 
 .goreng h2 {
@@ -474,15 +468,9 @@ nav ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .goreng .goreng-img {
-  background-image: url(img/drumstick-bite-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 .goreng .deskripsi-2 {
   font-size: 15px;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
 }
 
 .side-menu-1 .kuah {
@@ -497,7 +485,7 @@ nav ul li a:hover {
 .kuah h1 {
   margin-top: 5px;
   font-size: 60px;
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 
 .kuah h2 {
@@ -506,79 +494,229 @@ nav ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .kuah .kuah-img {
-  background-image: url(img/bowl-food-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 .kuah .deskripsi-3 {
   font-size: 15px;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
 }
 
-.menu-1 .side-menu-1 {
-  /* border: 2px solid gray; */
-  padding: 10px;
+.btn-menu a {
+  background-color: transparent;
+  border: 2px solid #51e5a1;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  transition: 0.3s ease;
+}
+
+.btn-menu a:hover {
+  background-color: #51e5a1;
+  color: #080808;
+}
+
+.garis-menu {
+  margin: 0 auto;
+  height: 2px;
+  background-color: #51e5a1;
+  display: flex;
+}
+
+.isi-3 .content-4 .other-menu {
+  text-align: center;
+  margin: 20px auto 0 auto;
+  font-size: 50px;
+}
+
+.content-4 span {
+  background-color: #51e5a1;
+  display: flex;
+  height: 2px;
+  width: 20%;
+  margin: 5px auto 40px auto;
+}
+
+.list-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.list-2 .menu-2 {
+  width: 90%;
+  height: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-2 .side-menu-2 {
+  box-sizing: border-box;
+  margin: 0 auto 20px auto;
+  width: 300px;
+  display: flex;
+}
+
+.ayam-bekakak {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 0 auto;
-  width: 25%;
 }
 
-.side-menu-1 .ayam-bekakak {
-  border: 5px solid #080808;
+.ayam-bekakak .ayam-bekakak-img {
   width: 280px;
   height: 280px;
+  border-radius: 3px;
+  border: 6px solid #17e7b7;
   background-image: url(img/Ayam\ Bekakak.jfif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 7px;
-}
-
-.side-menu-1 h3 {
-  margin: 15px auto auto auto;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-family: "Varela Round", sans-serif;
-}
-
-.side-menu-1 h6 {
   margin: 0 auto;
-  letter-spacing: 1px;
+  transition: 0.3s ease;
 }
 
-.side-menu-1 p {
-  margin-left: 8px;
+.ayam-bekakak-img:hover {
+  transform: scale(110%);
+}
+
+.ayam-bekakak h2 {
   margin-top: 20px;
-  font-weight: bold;
-  font-size: 20px;
+  margin-left: 5px;
+  letter-spacing: 2px;
 }
 
-.side-menu-1 ul {
-  margin-left: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.ayam-bekakak p {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-style: italic;
 }
 
-.side-menu-1 .harga-1 {
-  margin-top: 15px;
-  width: 100%;
+.ayam-bekakak h3 {
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.btn-other-menu {
+  text-align: center;
+  margin: 0 auto 100px auto;
+  width: 20%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-.harga-1 a {
+.btn-other-menu.hidden-bi {
+  display: none;
+}
+
+.btn-other-menu button {
+  padding: 17px 20px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #51e5a1;
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-other-menu button:hover {
+  background-color: #51e5a1;
+  color: #080808;
+}
+
+#bi-menu {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.content-4 .hidden-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-menu .menu-3 {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: none;
+}
+
+.menu-3.list {
+  display: flex;
+}
+
+.menu-3 .side-menu-3 {
+  box-sizing: border-box;
+  margin: 0 auto 60px auto;
+  width: 300px;
+  display: flex;
+}
+
+.side-menu-3 .tumpeng-nasi-kuning {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tumpeng-nasi-kuning .tumpeng-nasi-kuning-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 3px;
+  border: 6px solid #17e7b7;
+  background-image: url(img/Tumpeng\ nasi\ kuning.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  transition: 0.3s ease;
+}
+
+.tumpeng-nasi-kuning-img:hover {
+  transform: scale(110%);
+}
+
+.tumpeng-nasi-kuning h2 {
+  margin-top: 20px;
+  margin-left: 5px;
+  letter-spacing: 2px;
+}
+
+.tumpeng-nasi-kuning p {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-style: italic;
+}
+
+.pesan-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pesan-menu h3 {
+  font-size: 27px;
+}
+
+.pesan-menu a {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #51e5a1;
   text-decoration: none;
   border-radius: 10px;
   color: whitesmoke;
-  background-color: gray;
-  padding: 8px 18px;
+  transition: 0.3s ease;
+}
+
+.pesan-menu a:hover {
+  background-color: #51e5a1;
+  color: #080808;
 }
 
 /* Small */
