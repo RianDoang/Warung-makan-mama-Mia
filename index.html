@@ -311,12 +311,54 @@
           transform: "translate(0px, " + wScroll / 7 + "%)",
         });
 
+        // ScaleX span About
+        if (wScroll > $(".isi-2").offset().top - 420) {
+          $(".isi-2 span").addClass("line-1");
+        }
+
+        // Fade down p About
         if (wScroll > $(".isi-2").offset().top - 420) {
           $(".isi-2 p").addClass("fade-down");
         }
 
+        // Fade in a About
         if (wScroll > $(".isi-2").offset().top - 200) {
           $(".isi-2 a").addClass("fade-in");
+        }
+
+        // ScaleX span Menu
+        if (wScroll > $(".content-3").offset().top - 400) {
+          $(".content-3 span").addClass("line-2");
+        }
+
+        // Fade down bakar
+        if (wScroll > $(".side-menu-1").offset().top - 400) {
+          $(".side-menu-1 .bakar").addClass("fade-down");
+        }
+
+        // Fade down goreng
+        if (wScroll > $(".side-menu-1").offset().top - 400) {
+          $(".side-menu-1 .goreng").addClass("fade-down");
+        }
+
+        // Fade down kuah
+        if (wScroll > $(".side-menu-1").offset().top - 400) {
+          $(".side-menu-1 .kuah").addClass("fade-down");
+        }
+
+        // ScaleX span Other Menu
+        if (wScroll > $(".content-4").offset().top - 500) {
+          $(".content-4 span").addClass("line-3");
+        }
+
+        // Fade down Other Menu
+        if (wScroll > $(".side-menu-2").offset().top - 400) {
+          $(".side-menu-2 .ayam-bekakak").addClass("fade-down");
+        }
+
+        // Fade down hidden Other Menu
+        if (wScroll > $(".hidden-menu").offset().top - 400) {
+          $(".side-menu-3 .tumpeng-nasi-kuning").addClass("fade-down");
         }
       });
     </script>

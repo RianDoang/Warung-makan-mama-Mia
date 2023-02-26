@@ -277,18 +277,18 @@ nav ul li a:hover {
 }
 
 .colm-2 a {
-  padding: 20px 25px;
+  padding: 19px 22px;
   border-radius: 10px;
   text-decoration: none;
   color: whitesmoke;
   letter-spacing: 1px;
   background: transparent;
-  border: 2px solid #51e5a1;
+  border: 2px solid whitesmoke;
   transition: 0.2s ease;
 }
 
 .colm-2 a:hover {
-  background: #51e5a1;
+  background: whitesmoke;
   color: #080808;
 }
 
@@ -319,11 +319,17 @@ nav ul li a:hover {
 }
 
 .isi-2 span {
+  transform: scaleX(0);
+}
+
+.isi-2 span.line-1 {
   background-color: #080808;
   display: flex;
   height: 2px;
   width: 20%;
   margin: -15px auto 30px auto;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
 }
 
 .isi-2 p {
@@ -331,6 +337,7 @@ nav ul li a:hover {
   font-size: 18px;
   transform: translate(0, -150px);
   transition: 0.4s ease;
+  transition-delay: 300ms;
 }
 
 .isi-2 p.fade-down {
@@ -351,6 +358,7 @@ nav ul li a:hover {
   background-color: #080808;
   border-radius: 10px;
   transition: 0.5s ease;
+  transition-delay: 500ms;
 }
 
 .btn-about a.fade-in {
@@ -389,11 +397,17 @@ nav ul li a:hover {
 }
 
 .content-3 span {
+  transform: scaleX(0);
+}
+
+.content-3 span.line-2 {
   background-color: #51e5a1;
   display: flex;
   height: 2px;
   width: 9%;
   margin: 5px auto 40px auto;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
 }
 
 .list-1 {
@@ -428,6 +442,15 @@ nav ul li a:hover {
   /* background-color: #b3b3b3; */
   margin: 0 auto;
   text-align: start;
+  opacity: 0;
+  transform: translate(0, -150px);
+  transition: 0.4s ease;
+  transition-delay: 250ms;
+}
+
+.side-menu-1 .bakar.fade-down {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .bakar h1 {
@@ -454,6 +477,15 @@ nav ul li a:hover {
   /* border: 5px solid #242424;
   background-color: #b3b3b3; */
   text-align: start;
+  opacity: 0;
+  transform: translate(0, -150px);
+  transition: 0.4s ease;
+  transition-delay: 450ms;
+}
+
+.side-menu-1 .goreng.fade-down {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .goreng h1 {
@@ -480,6 +512,15 @@ nav ul li a:hover {
   /* border: 5px solid #242424;
   background-color: #b3b3b3; */
   text-align: start;
+  opacity: 0;
+  transform: translate(0, -150px);
+  transition: 0.4s ease;
+  transition-delay: 750ms;
+}
+
+.side-menu-1 .kuah.fade-down {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .kuah h1 {
@@ -528,11 +569,17 @@ nav ul li a:hover {
 }
 
 .content-4 span {
+  transform: scaleX(0);
+}
+
+.content-4 span.line-3 {
   background-color: #51e5a1;
   display: flex;
   height: 2px;
   width: 20%;
   margin: 5px auto 40px auto;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
 }
 
 .list-2 {
@@ -561,6 +608,14 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  opacity: 0;
+  transform: translate(0, -150px);
+  transition: 0.4s ease;
+}
+
+.ayam-bekakak.fade-down {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .ayam-bekakak .ayam-bekakak-img {
@@ -662,6 +717,15 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  opacity: 0;
+  transform: translate(0, -150px);
+  transition: 0.4s ease;
+}
+
+.tumpeng-nasi-kuning.fade-down {
+  transition-delay: 0.2s;
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .tumpeng-nasi-kuning .tumpeng-nasi-kuning-img {
