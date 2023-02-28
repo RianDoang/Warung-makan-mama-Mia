@@ -14,7 +14,6 @@ body {
   background-color: #b0b0b0;
   box-sizing: border-box;
   overflow-x: hidden;
-  height: 4000px;
 }
 
 /* .container {
@@ -144,6 +143,7 @@ nav ul li a:hover {
   background-color: #0808081a;
   box-shadow: 0 4px 20px #080808c5;
 }
+
 .wadah-1 .colm-1 {
   width: 91%;
   height: 93px;
@@ -294,8 +294,7 @@ nav ul li a:hover {
 
 .container {
   width: 100%;
-  height: 100vh;
-  background-color: red;
+  max-height: 10000px;
 }
 
 .wadah-2 {
@@ -303,7 +302,7 @@ nav ul li a:hover {
   min-height: 10vh;
   text-align: center;
   color: #080808;
-  background-color: whitesmoke;
+  background-color: #dddddd;
 }
 
 .wadah-2 .isi-2 {
@@ -357,8 +356,7 @@ nav ul li a:hover {
   padding: 20px 25px;
   background-color: #080808;
   border-radius: 10px;
-  transition: 0.5s ease;
-  transition-delay: 500ms;
+  transition: 0.4s ease;
 }
 
 .btn-about a.fade-in {
@@ -782,6 +780,393 @@ nav ul li a:hover {
   background-color: #51e5a1;
   color: #080808;
 }
+
+.container .contact-box {
+  width: 100%;
+  max-height: 1000px;
+  background-color: #dddddd;
+}
+
+.contact-box .contact-box-content {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box-content h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-box-content span {
+  transform: scaleX(0);
+}
+
+.contact-box-content span.line-4 {
+  background-color: #51e5a1;
+  display: flex;
+  height: 2px;
+  width: 20%;
+  margin: 5px auto 60px auto;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
+.container .whatsapp-form {
+  width: 100%;
+  max-height: 1000px;
+  background-color: #dddddd;
+}
+
+.whatsapp-form .datainput {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.datainput label {
+  margin-left: 5px;
+}
+
+.datainput input {
+  outline: none;
+  border: none;
+  padding: 13px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.datainput select {
+  outline: none;
+  border: none;
+  padding: 13px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.datainput textarea {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  min-height: 150px;
+  padding: 13px;
+}
+
+.datainput .btn-contact {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.btn-contact > a:nth-child(1) {
+  color: white;
+  background-color: blue;
+  width: 45%;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 7px;
+}
+
+.btn-contact > a:nth-child(2) {
+  color: white;
+  background-color: gray;
+  width: 45%;
+  text-decoration: none;
+  padding: 13px;
+  margin-left: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#text-pesanan {
+  display: none;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: -70px;
+  margin-bottom: 100px;
+  border-radius: 0.5rem;
+  background: #c6ffc5;
+  color: #0ea904;
+  font-size: 15px;
+}
+
+#text-pesanan.showPesan {
+  display: block;
+}
+
+#text-info span {
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: -70px;
+  margin-bottom: 150px;
+  border-radius: 0.5rem;
+}
+
+#text-info span.down {
+  display: none;
+}
+
+#text-info span.yes {
+  background: #c6ffc5;
+  color: #0ea904;
+}
+
+#text-info span.no {
+  background: #ffc5c5;
+  color: #ce0404;
+}
+
+.datainput input:focus,
+.datainput textarea:focus {
+  outline: none;
+}
+
+#notif-license span {
+  font-size: 40px;
+}
+
+#notif-license {
+  display: none;
+  position: fixed;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 15px;
+  position: absolute;
+  background: #21a51f;
+  transition: 0.2s ease all;
+  border-radius: 6px;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.datainput input:focus ~ .bar:before,
+.datainput input:focus ~ .bar:after,
+.datainput textarea:focus ~ .bar:before,
+.datainput textarea:focus ~ .bar:after {
+  width: 50%;
+}
+
+.bar-1 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar-1:before,
+.bar-1:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #21a51f;
+  transition: 0.2s ease all;
+  border-radius: 6px;
+}
+
+.bar-1:before {
+  left: 50%;
+}
+
+.bar-1:after {
+  right: 50%;
+}
+
+.datainput input:focus ~ .bar:before,
+.datainput input:focus ~ .bar:after,
+.datainput textarea:focus ~ .bar-1:before,
+.datainput textarea:focus ~ .bar-1:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 50%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.datainput input:focus ~ .highlight,
+.datainput textarea:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+footer .container .footer-content {
+  width: 100%;
+  max-height: 1000px;
+  display: flex;
+}
+
+.footer-content .content-side-1 {
+  background-color: blue;
+  width: 65%;
+  padding: 10px;
+  border-right: 1px solid aqua;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-side-1 .isi-content-side-1 {
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 50%;
+}
+
+.isi-content-side-1 h1 {
+  font-size: 50px;
+  margin-bottom: -5px;
+}
+
+.isi-content-side-1 h3 {
+  margin-bottom: 2px;
+  font-size: 25px;
+}
+
+.isi-content-side-1 h4 {
+  margin-bottom: 5px;
+}
+
+.content-side-1 .isi-content-side-2 {
+  width: 20%;
+  margin-top: 35px;
+}
+
+.isi-content-side-2 ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.isi-content-side-2 li {
+  margin-bottom: 16px;
+  margin-left: 2px;
+}
+
+.isi-content-side-2 a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer-content .content-side-2 {
+  background-color: red;
+  width: 45%;
+  border-left: 1px solid aqua;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .datainput input:focus ~ label,
+.datainput input:valid ~ label,
+.datainput textarea:focus ~ label,
+.datainput textarea:valid ~ label {
+  top: -25px;
+  font-size: 15px;
+  color: #21a51f;
+} */
+
+/* .datainput a.send_form {
+  color: #fff;
+  background: #21a51f;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 7px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 30px auto 100px;
+} */
+
+/* .whatsapp-form .datainput {
+  width: 70%;
+  margin: 0 auto 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  border-radius: 7px; 
+} */
+
+/* .datainput input {
+  width: 100%;
+  border: none;
+  padding: 13px;
+} */
+
+/* .datainput textarea {
+  min-height: 120px;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 13px;
+} */
+
+/* .datainput select {
+  border-radius: 7px;
+  padding: 12px 0;
+  color: #555;
+  font-size: 14px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  background: #fff;
+} */
+
+/* .datainput label {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 18px;
+  transition: 0.2s ease all;
+} */
+
+/* .datainput input:focus ~ label,
+.datainput input:valid ~ label,
+.datainput textarea:focus ~ label,
+.datainput textarea:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+  color: #21a51f;
+} */
 
 /* Small */
 @media screen and (max-width: 576px) {
