@@ -299,10 +299,10 @@ nav ul li a:hover {
 
 .wadah-2 {
   width: 100%;
-  min-height: 10vh;
+  height: 300px;
   text-align: center;
-  color: #080808;
-  background-color: #dddddd;
+  color: whitesmoke;
+  background-color: #475569;
 }
 
 .wadah-2 .isi-2 {
@@ -315,6 +315,7 @@ nav ul li a:hover {
 .isi-2 h1 {
   margin-bottom: 20px;
   font-size: 45px;
+  text-shadow: 1px 1px 4px #08080869;
 }
 
 .isi-2 span {
@@ -322,7 +323,7 @@ nav ul li a:hover {
 }
 
 .isi-2 span.line-1 {
-  background-color: #080808;
+  background-color: #51e5a1;
   display: flex;
   height: 2px;
   width: 20%;
@@ -337,6 +338,7 @@ nav ul li a:hover {
   transform: translate(0, -150px);
   transition: 0.4s ease;
   transition-delay: 300ms;
+  color: #f1f5f9;
 }
 
 .isi-2 p.fade-down {
@@ -344,36 +346,10 @@ nav ul li a:hover {
   opacity: 1;
 }
 
-.isi-2 .btn-about {
-  margin-top: 55px;
-  margin-bottom: 40px;
-}
-
-.btn-about a {
-  opacity: 0;
-  text-decoration: none;
-  color: whitesmoke;
-  padding: 20px 25px;
-  background-color: #080808;
-  border-radius: 10px;
-  transition: 0.4s ease;
-}
-
-.btn-about a.fade-in {
-  opacity: 1;
-}
-
-.btn-about a:hover {
-  transition: 0.3s ease;
-  background: #51e5a1;
-  color: #080808;
-  border: 1px solid #080808;
-}
-
 .wadah-3 {
   width: 100%;
   max-height: 5000px;
-  background-color: #24272c;
+  background-color: #1e293b;
   color: whitesmoke;
   /* background-image: url(img/Makaroni\ img.jpg);
   background-position: center;
@@ -402,7 +378,7 @@ nav ul li a:hover {
   background-color: #51e5a1;
   display: flex;
   height: 2px;
-  width: 9%;
+  width: 13%;
   margin: 5px auto 40px auto;
   transform: scaleX(1);
   transition: transform 0.3s ease;
@@ -466,6 +442,7 @@ nav ul li a:hover {
 .bakar .deskripsi-1 {
   font-size: 15px;
   margin: 20px auto 50px auto;
+  color: #e2e8f0;
 }
 
 .side-menu-1 .goreng {
@@ -501,6 +478,7 @@ nav ul li a:hover {
 .goreng .deskripsi-2 {
   font-size: 15px;
   margin: 20px auto 50px auto;
+  color: #e2e8f0;
 }
 
 .side-menu-1 .kuah {
@@ -536,6 +514,7 @@ nav ul li a:hover {
 .kuah .deskripsi-3 {
   font-size: 15px;
   margin: 20px auto 50px auto;
+  color: #e2e8f0;
 }
 
 .btn-menu a {
@@ -784,7 +763,8 @@ nav ul li a:hover {
 .container .contact-box {
   width: 100%;
   max-height: 1000px;
-  background-color: #dddddd;
+  background-color: #475569;
+  color: whitesmoke;
 }
 
 .contact-box .contact-box-content {
@@ -807,7 +787,7 @@ nav ul li a:hover {
   background-color: #51e5a1;
   display: flex;
   height: 2px;
-  width: 20%;
+  width: 17%;
   margin: 5px auto 60px auto;
   transform: scaleX(1);
   transition: transform 0.3s ease;
@@ -816,7 +796,7 @@ nav ul li a:hover {
 .container .whatsapp-form {
   width: 100%;
   max-height: 1000px;
-  background-color: #dddddd;
+  background-color: #475569;
 }
 
 .whatsapp-form .datainput {
@@ -865,23 +845,33 @@ nav ul li a:hover {
 }
 
 .btn-contact > a:nth-child(1) {
-  color: white;
-  background-color: blue;
+  color: whitesmoke;
+  background-color: #22c55e;
   width: 45%;
   text-decoration: none;
   padding: 13px;
   border-radius: 7px;
+  transition: 0.2s ease;
+}
+
+.btn-contact > a:nth-child(1):hover {
+  background-color: #15803d;
 }
 
 .btn-contact > a:nth-child(2) {
-  color: white;
-  background-color: gray;
+  color: whitesmoke;
+  background-color: #ef4444;
   width: 45%;
   text-decoration: none;
   padding: 13px;
   margin-left: 40px;
   border-radius: 7px;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-contact > a:nth-child(2):hover {
+  background-color: #b91c1c;
 }
 
 #text-pesanan {
@@ -1027,7 +1017,8 @@ footer .container .footer-content {
 }
 
 .footer-content .content-side-1 {
-  background-color: blue;
+  background-color: #1e293b;
+  color: whitesmoke;
   width: 65%;
   padding: 10px;
   border-right: 1px solid aqua;
@@ -1053,6 +1044,11 @@ footer .container .footer-content {
 
 .isi-content-side-1 h4 {
   margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.isi-content-side-1 h4 span {
+  margin-right: 6px;
 }
 
 .content-side-1 .isi-content-side-2 {
@@ -1076,16 +1072,27 @@ footer .container .footer-content {
 .isi-content-side-2 a {
   color: whitesmoke;
   text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.isi-content-side-2 a:hover {
+  color: #14b8a6;
 }
 
 .footer-content .content-side-2 {
-  background-color: red;
+  background-color: #1e293b;
   width: 45%;
-  border-left: 1px solid aqua;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content-side-2 iframe {
+  border: 1px solid aqua;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px aqua;
 }
 
 /* .datainput input:focus ~ label,

@@ -106,9 +106,6 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora maxime unde sed aut distinctio eveniet architecto fugiatreiciendis ducimus atque, eius non, ex placeat asperiores accusamus iusto dolor voluptatem quasi, quo
           incidunt praesentium ab minus ut odio! Aspernatur, natus eos.
         </p>
-        <div class="btn-about">
-          <a href="">Lorem, ipsum.</a>
-        </div>
       </div>
     </div>
     <div class="wadah-3" id="menu">
@@ -275,47 +272,46 @@
           <h1>Contact Us</h1>
           <span></span>
         </div>
-      </div>
-
-      <form class="whatsapp-form">
-        <div class="datainput">
-          <label>Nama</label>
-          <input class="validate" id="wa_name" name="name" required="" type="text" value="" placeholder="example" />
-          <span class="highlight"></span><span class="bar"></span>
-        </div>
-        <div class="datainput">
-          <label>Email</label>
-          <input class="validate" id="wa_email" name="email" required type="email" value="" placeholder="example@gmail.com" />
-          <span class="highlight"></span><span class="bar"></span>
-        </div>
-        <div class="datainput">
-          <label>Nomer HP</label>
-          <input class="validate" id="wa_number" name="count" required type="number" value="" placeholder="08**" />
-          <span class="highlight"></span><span class="bar"></span>
-        </div>
-        <div class="datainput">
-          <label>Pilih menu</label>
-          <select id="wa_select">
-            <option hidden="hidden" selected="selected" value="default">Lihat menu</option>
-            <option value="1">Paket ayam bekakak / 120K</option>
-            <option value="2">Tumpeng nasi kuning / 130K</option>
-          </select>
-        </div>
-        <div class="datainput">
-          <label>Pesan</label>
-          <textarea id="wa_textarea" placeholder="Tambahkan sambal sedikit, tolong" maxlength="5000" row="1" required></textarea>
-          <span class="highlight"></span><span class="bar-1"></span>
-        </div>
-        <div class="datainput">
-          <div class="btn-contact">
-            <a class="send_form" href="javascript:void" type="submit" id="sendWA" title="Send to Whatsapp">Send to Whatsapp</a>
-
-            <a onclick="eraseText()" title="Hapus isi input">Hapus isi pesan</a>
+        <form class="whatsapp-form">
+          <div class="datainput">
+            <label>Nama</label>
+            <input class="validate" id="wa_name" name="name" required="" type="text" value="" placeholder="example" />
+            <span class="highlight"></span><span class="bar"></span>
           </div>
-          <h3 id="text-pesanan">Pesanan telah dihapus!</h3>
-          <div id="text-info"></div>
-        </div>
-      </form>
+          <div class="datainput">
+            <label>Email</label>
+            <input class="validate" id="wa_email" name="email" required type="email" value="" placeholder="example@gmail.com" />
+            <span class="highlight"></span><span class="bar"></span>
+          </div>
+          <div class="datainput">
+            <label>Nomer HP</label>
+            <input class="validate" id="wa_number" name="count" required type="number" value="" placeholder="08**" />
+            <span class="highlight"></span><span class="bar"></span>
+          </div>
+          <div class="datainput">
+            <label>Pilih menu</label>
+            <select id="wa_select">
+              <option hidden="hidden" selected="selected" value="default">Lihat menu</option>
+              <option value="1">Paket ayam bekakak / 120K</option>
+              <option value="2">Tumpeng nasi kuning / 130K</option>
+            </select>
+          </div>
+          <div class="datainput">
+            <label>Pesan tambahan</label>
+            <textarea id="wa_textarea" placeholder="Sambalnya ditambahkan sedikit ya. Terimakasih!" maxlength="5000" row="1" required></textarea>
+            <span class="highlight"></span><span class="bar-1"></span>
+          </div>
+          <div class="datainput">
+            <div class="btn-contact">
+              <a class="send_form" href="javascript:void" type="submit" id="sendWA" title="Pesan sekarang">Pesan sekarang</a>
+
+              <a onclick="eraseText()" title="Hapus isi pesan">Hapus isi pesan</a>
+            </div>
+            <h3 id="text-pesanan">Pesanan telah dihapus!</h3>
+            <div id="text-info"></div>
+          </div>
+        </form>
+      </div>
     </div>
 
     <footer>
@@ -325,8 +321,10 @@
             <div class="isi-content-side-1">
               <h1>Mama Mia</h1>
               <h3>Hubungi kami</h3>
-              <h4>+62 812-9441-3748</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4>
+                <span><i class="bi bi-whatsapp"></i></span>+62 812-9441-3748
+              </h4>
+              <p>Jl. Me Wira Gg. Kp. Jati, RT.002/RW.003, Parung, Kec. Parung, Kabupaten Bogor, Jawa Barat 16330</p>
             </div>
             <div class="isi-content-side-2">
               <h2>Tautan</h2>
@@ -344,7 +342,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.369595370659!2d106.72732968320501!3d-6.427543916973697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e87e61c320d9%3A0x20507940ec1a208e!2sAyam%20Bakar%20Mama%20Mia!5e0!3m2!1sid!2sid!4v1677502447566!5m2!1sid!2sid"
                 width="550"
                 height="300"
-                style="border: 0"
+                style="border: 1"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -386,6 +384,7 @@
         document.getElementById("wa_email").value = "";
         document.getElementById("wa_number").value = "";
         document.getElementById("wa_textarea").value = "";
+        document.getElementById("wa_select").value = "default";
         textPesan.classList.add("showPesan");
         setTimeout(() => {
           textPesan.classList.remove("showPesan");
@@ -430,7 +429,8 @@
             walink2 +
             "%0A%0A" +
             "*Nama* : " +
-            +"%0A" +
+            input_name1 +
+            "%0A" +
             "*Alamat Email* : " +
             input_email1 +
             "%0A" +
@@ -443,7 +443,7 @@
             // "*URL/Link* : " +
             // input_url1 +
             // "%0A" +
-            "*Pesan dari pelanggan* : " +
+            "*Pesan tambahan dari pelanggan* : " +
             input_textarea1 +
             "%0A";
 
